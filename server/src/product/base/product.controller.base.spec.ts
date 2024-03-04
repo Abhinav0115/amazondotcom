@@ -21,7 +21,7 @@ const CREATE_INPUT = {
   createdAt: new Date(),
   discountedPrice: 42.42,
   id: "exampleId",
-  price: 42.42,
+  saleprice: 42.42,
   title: "exampleTitle",
   updatedAt: new Date(),
 };
@@ -29,7 +29,7 @@ const CREATE_RESULT = {
   createdAt: new Date(),
   discountedPrice: 42.42,
   id: "exampleId",
-  price: 42.42,
+  saleprice: 42.42,
   title: "exampleTitle",
   updatedAt: new Date(),
 };
@@ -38,7 +38,7 @@ const FIND_MANY_RESULT = [
     createdAt: new Date(),
     discountedPrice: 42.42,
     id: "exampleId",
-    price: 42.42,
+    saleprice: 42.42,
     title: "exampleTitle",
     updatedAt: new Date(),
   },
@@ -47,7 +47,7 @@ const FIND_ONE_RESULT = {
   createdAt: new Date(),
   discountedPrice: 42.42,
   id: "exampleId",
-  price: 42.42,
+  saleprice: 42.42,
   title: "exampleTitle",
   updatedAt: new Date(),
 };

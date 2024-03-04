@@ -87,14 +87,6 @@ class ProductCreateInput {
   order?: OrderWhereUniqueInput | null;
 
   @ApiProperty({
-    required: true,
-    type: Number,
-  })
-  @IsNumber()
-  @Field(() => Number)
-  price!: number;
-
-  @ApiProperty({
     required: false,
     type: () => ReviewCreateNestedManyWithoutProductsInput,
   })
@@ -105,6 +97,14 @@ class ProductCreateInput {
     nullable: true,
   })
   reviews?: ReviewCreateNestedManyWithoutProductsInput;
+
+  @ApiProperty({
+    required: true,
+    type: Number,
+  })
+  @IsNumber()
+  @Field(() => Number)
+  saleprice!: number;
 
   @ApiProperty({
     required: true,

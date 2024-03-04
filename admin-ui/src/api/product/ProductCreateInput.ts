@@ -10,8 +10,8 @@ export type ProductCreateInput = {
   discountedPrice?: number | null;
   images: InputJsonValue;
   order?: OrderWhereUniqueInput | null;
-  price: number;
   reviews?: ReviewCreateNestedManyWithoutProductsInput;
+  saleprice: number;
   title: string;
   variants: InputJsonValue;
 };

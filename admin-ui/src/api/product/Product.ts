@@ -12,8 +12,8 @@ export type Product = {
   id: string;
   images: JsonValue;
   order?: Order | null;
-  price: number;
   reviews?: Array<Review>;
+  saleprice: number;
   title: string;
   updatedAt: Date;
   variants: JsonValue;

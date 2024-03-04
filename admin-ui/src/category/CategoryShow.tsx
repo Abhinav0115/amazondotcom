@@ -44,7 +44,7 @@ export const CategoryShow = (props: ShowProps): React.ReactElement => {
             <ReferenceField label="Orders" source="order.id" reference="Order">
               <TextField source={ORDER_TITLE_FIELD} />
             </ReferenceField>
-            <TextField label="price" source="price" />
+            <TextField label="saleprice" source="saleprice" />
             <TextField label="title" source="title" />
             <DateField source="updatedAt" label="Updated At" />
             <TextField label="variants" source="variants" />

@@ -34,7 +34,6 @@ export const ProductCreate = (props: CreateProps): React.ReactElement => {
         <ReferenceInput source="order.id" reference="Order" label="Orders">
           <SelectInput optionText={OrderTitle} />
         </ReferenceInput>
-        <NumberInput label="price" source="price" />
         <ReferenceArrayInput
           source="reviews"
           reference="Review"
@@ -43,6 +42,7 @@ export const ProductCreate = (props: CreateProps): React.ReactElement => {
         >
           <SelectArrayInput optionText={ReviewTitle} />
         </ReferenceArrayInput>
+        <NumberInput label="saleprice" source="saleprice" />
         <TextInput label="title" source="title" />
         <div />
       </SimpleForm>

@@ -98,14 +98,6 @@ class Product {
   order?: Order | null;
 
   @ApiProperty({
-    required: true,
-    type: Number,
-  })
-  @IsNumber()
-  @Field(() => Number)
-  price!: number;
-
-  @ApiProperty({
     required: false,
     type: () => [Review],
   })
@@ -113,6 +105,14 @@ class Product {
   @Type(() => Review)
   @IsOptional()
   reviews?: Array<Review>;
+
+  @ApiProperty({
+    required: true,
+    type: Number,
+  })
+  @IsNumber()
+  @Field(() => Number)
+  saleprice!: number;
 
   @ApiProperty({
     required: true,
