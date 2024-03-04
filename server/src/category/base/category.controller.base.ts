@@ -225,7 +225,7 @@ export class CategoryControllerBase {
           },
         },
 
-        price: true,
+        saleprice: true,
         title: true,
         updatedAt: true,
         variants: true,

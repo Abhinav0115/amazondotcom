@@ -116,7 +116,7 @@ class ProductOrderByInput {
   @Field(() => SortOrder, {
     nullable: true,
   })
-  price?: SortOrder;
+  saleprice?: SortOrder;
 
   @ApiProperty({
     required: false,

@@ -9,7 +9,7 @@ export type ProductOrderByInput = {
   id?: SortOrder;
   images?: SortOrder;
   orderId?: SortOrder;
-  price?: SortOrder;
+  saleprice?: SortOrder;
   title?: SortOrder;
   updatedAt?: SortOrder;
   variants?: SortOrder;

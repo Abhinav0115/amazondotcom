@@ -10,8 +10,8 @@ export type ProductUpdateInput = {
   discountedPrice?: number | null;
   images?: InputJsonValue;
   order?: OrderWhereUniqueInput | null;
-  price?: number;
   reviews?: ReviewUpdateManyWithoutProductsInput;
+  saleprice?: number;
   title?: string;
   variants?: InputJsonValue;
 };

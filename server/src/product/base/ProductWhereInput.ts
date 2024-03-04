@@ -18,8 +18,8 @@ import { JsonFilter } from "../../util/JsonFilter";
 import { FloatNullableFilter } from "../../util/FloatNullableFilter";
 import { StringFilter } from "../../util/StringFilter";
 import { OrderWhereUniqueInput } from "../../order/base/OrderWhereUniqueInput";
-import { FloatFilter } from "../../util/FloatFilter";
 import { ReviewListRelationFilter } from "../../review/base/ReviewListRelationFilter";
+import { FloatFilter } from "../../util/FloatFilter";
 
 @InputType()
 class ProductWhereInput {
@@ -104,17 +104,6 @@ class ProductWhereInput {
 
   @ApiProperty({
     required: false,
-    type: FloatFilter,
-  })
-  @Type(() => FloatFilter)
-  @IsOptional()
-  @Field(() => FloatFilter, {
-    nullable: true,
-  })
-  price?: FloatFilter;
-
-  @ApiProperty({
-    required: false,
     type: () => ReviewListRelationFilter,
   })
   @ValidateNested()
@@ -124,6 +113,17 @@ class ProductWhereInput {
     nullable: true,
   })
   reviews?: ReviewListRelationFilter;
+
+  @ApiProperty({
+    required: false,
+    type: FloatFilter,
+  })
+  @Type(() => FloatFilter)
+  @IsOptional()
+  @Field(() => FloatFilter, {
+    nullable: true,
+  })
+  saleprice?: FloatFilter;
 
   @ApiProperty({
     required: false,

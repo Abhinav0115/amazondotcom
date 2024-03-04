@@ -32,8 +32,8 @@ model Product {
   images          Json
   order           Order?    @relation(fields: [orderId], references: [id])
   orderId         String?   @db.ObjectId
-  price           Float
   reviews         Review[]
+  saleprice       Float
   title           String
   updatedAt       DateTime  @updatedAt
   variants        Json

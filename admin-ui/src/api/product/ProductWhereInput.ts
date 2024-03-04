@@ -3,8 +3,8 @@ import { JsonFilter } from "../../util/JsonFilter";
 import { FloatNullableFilter } from "../../util/FloatNullableFilter";
 import { StringFilter } from "../../util/StringFilter";
 import { OrderWhereUniqueInput } from "../order/OrderWhereUniqueInput";
-import { FloatFilter } from "../../util/FloatFilter";
 import { ReviewListRelationFilter } from "../review/ReviewListRelationFilter";
+import { FloatFilter } from "../../util/FloatFilter";
 
 export type ProductWhereInput = {
   category?: CategoryWhereUniqueInput;
@@ -14,8 +14,8 @@ export type ProductWhereInput = {
   id?: StringFilter;
   images?: JsonFilter;
   order?: OrderWhereUniqueInput;
-  price?: FloatFilter;
   reviews?: ReviewListRelationFilter;
+  saleprice?: FloatFilter;
   title?: StringFilter;
   variants?: JsonFilter;
 };

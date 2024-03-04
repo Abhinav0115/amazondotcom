@@ -284,7 +284,7 @@ export class OrderControllerBase {
           },
         },
 
-        price: true,
+        saleprice: true,
         title: true,
         updatedAt: true,
         variants: true,

@@ -94,17 +94,6 @@ class ProductUpdateInput {
 
   @ApiProperty({
     required: false,
-    type: Number,
-  })
-  @IsNumber()
-  @IsOptional()
-  @Field(() => Number, {
-    nullable: true,
-  })
-  price?: number;
-
-  @ApiProperty({
-    required: false,
     type: () => ReviewUpdateManyWithoutProductsInput,
   })
   @ValidateNested()
@@ -114,6 +103,17 @@ class ProductUpdateInput {
     nullable: true,
   })
   reviews?: ReviewUpdateManyWithoutProductsInput;
+
+  @ApiProperty({
+    required: false,
+    type: Number,
+  })
+  @IsNumber()
+  @IsOptional()
+  @Field(() => Number, {
+    nullable: true,
+  })
+  saleprice?: number;
 
   @ApiProperty({
     required: false,

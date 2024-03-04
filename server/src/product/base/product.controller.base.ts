@@ -87,7 +87,7 @@ export class ProductControllerBase {
           },
         },
 
-        price: true,
+        saleprice: true,
         title: true,
         updatedAt: true,
         variants: true,
@@ -131,7 +131,7 @@ export class ProductControllerBase {
           },
         },
 
-        price: true,
+        saleprice: true,
         title: true,
         updatedAt: true,
         variants: true,
@@ -176,7 +176,7 @@ export class ProductControllerBase {
           },
         },
 
-        price: true,
+        saleprice: true,
         title: true,
         updatedAt: true,
         variants: true,
@@ -244,7 +244,7 @@ export class ProductControllerBase {
             },
           },
 
-          price: true,
+          saleprice: true,
           title: true,
           updatedAt: true,
           variants: true,
@@ -297,7 +297,7 @@ export class ProductControllerBase {
             },
           },
 
-          price: true,
+          saleprice: true,
           title: true,
           updatedAt: true,
           variants: true,
