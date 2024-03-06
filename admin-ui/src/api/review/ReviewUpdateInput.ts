@@ -3,6 +3,6 @@ import { UserWhereUniqueInput } from "../user/UserWhereUniqueInput";
 
 export type ReviewUpdateInput = {
   product?: ProductWhereUniqueInput | null;
-  rating?: number | null;
+  rating?: number;
   user?: UserWhereUniqueInput | null;
 };

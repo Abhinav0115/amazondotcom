@@ -15,11 +15,10 @@ import { CategoryWhereUniqueInput } from "../../category/base/CategoryWhereUniqu
 import { ValidateNested, IsOptional } from "class-validator";
 import { Type } from "class-transformer";
 import { JsonFilter } from "../../util/JsonFilter";
-import { FloatNullableFilter } from "../../util/FloatNullableFilter";
+import { FloatFilter } from "../../util/FloatFilter";
 import { StringFilter } from "../../util/StringFilter";
 import { OrderWhereUniqueInput } from "../../order/base/OrderWhereUniqueInput";
 import { ReviewListRelationFilter } from "../../review/base/ReviewListRelationFilter";
-import { FloatFilter } from "../../util/FloatFilter";
 
 @InputType()
 class ProductWhereInput {
@@ -59,14 +58,14 @@ class ProductWhereInput {
 
   @ApiProperty({
     required: false,
-    type: FloatNullableFilter,
+    type: FloatFilter,
   })
-  @Type(() => FloatNullableFilter)
+  @Type(() => FloatFilter)
   @IsOptional()
-  @Field(() => FloatNullableFilter, {
+  @Field(() => FloatFilter, {
     nullable: true,
   })
-  discountedPrice?: FloatNullableFilter;
+  discountedPrice?: FloatFilter;
 
   @ApiProperty({
     required: false,

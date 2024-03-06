@@ -7,7 +7,7 @@ export type ProductUpdateInput = {
   category?: CategoryWhereUniqueInput | null;
   colors?: InputJsonValue;
   description?: InputJsonValue;
-  discountedPrice?: number | null;
+  discountedPrice?: number;
   images?: InputJsonValue;
   order?: OrderWhereUniqueInput | null;
   reviews?: ReviewUpdateManyWithoutProductsInput;

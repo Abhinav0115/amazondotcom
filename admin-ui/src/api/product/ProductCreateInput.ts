@@ -6,8 +6,8 @@ import { ReviewCreateNestedManyWithoutProductsInput } from "./ReviewCreateNested
 export type ProductCreateInput = {
   category?: CategoryWhereUniqueInput | null;
   colors: InputJsonValue;
-  description?: InputJsonValue;
-  discountedPrice?: number | null;
+  description: InputJsonValue;
+  discountedPrice: number;
   images: InputJsonValue;
   order?: OrderWhereUniqueInput | null;
   reviews?: ReviewCreateNestedManyWithoutProductsInput;

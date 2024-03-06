@@ -53,25 +53,19 @@ class Product {
   createdAt!: Date;
 
   @ApiProperty({
-    required: false,
+    required: true,
   })
   @IsJSONValue()
-  @IsOptional()
-  @Field(() => GraphQLJSON, {
-    nullable: true,
-  })
+  @Field(() => GraphQLJSON)
   description!: JsonValue;
 
   @ApiProperty({
-    required: false,
+    required: true,
     type: Number,
   })
   @IsNumber()
-  @IsOptional()
-  @Field(() => Number, {
-    nullable: true,
-  })
-  discountedPrice!: number | null;
+  @Field(() => Number)
+  discountedPrice!: number;
 
   @ApiProperty({
     required: true,

@@ -68,7 +68,7 @@ class ProductUpdateInput {
   @Field(() => Number, {
     nullable: true,
   })
-  discountedPrice?: number | null;
+  discountedPrice?: number;
 
   @ApiProperty({
     required: false,
