@@ -31,15 +31,12 @@ class ReviewCreateInput {
   product?: ProductWhereUniqueInput | null;
 
   @ApiProperty({
-    required: false,
+    required: true,
     type: Number,
   })
   @IsInt()
-  @IsOptional()
-  @Field(() => Number, {
-    nullable: true,
-  })
-  rating?: number | null;
+  @Field(() => Number)
+  rating!: number;
 
   @ApiProperty({
     required: false,

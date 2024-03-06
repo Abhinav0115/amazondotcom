@@ -39,7 +39,7 @@ class ReviewUpdateInput {
   @Field(() => Number, {
     nullable: true,
   })
-  rating?: number | null;
+  rating?: number;
 
   @ApiProperty({
     required: false,

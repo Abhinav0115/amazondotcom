@@ -5,7 +5,7 @@ export type Review = {
   createdAt: Date;
   id: string;
   product?: Product | null;
-  rating: number | null;
+  rating: number;
   updatedAt: Date;
   user?: User | null;
 };

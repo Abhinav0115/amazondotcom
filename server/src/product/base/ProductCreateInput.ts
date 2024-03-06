@@ -47,25 +47,19 @@ class ProductCreateInput {
   colors!: InputJsonValue;
 
   @ApiProperty({
-    required: false,
+    required: true,
   })
   @IsJSONValue()
-  @IsOptional()
-  @Field(() => GraphQLJSON, {
-    nullable: true,
-  })
-  description?: InputJsonValue;
+  @Field(() => GraphQLJSON)
+  description!: InputJsonValue;
 
   @ApiProperty({
-    required: false,
+    required: true,
     type: Number,
   })
   @IsNumber()
-  @IsOptional()
-  @Field(() => Number, {
-    nullable: true,
-  })
-  discountedPrice?: number | null;
+  @Field(() => Number)
+  discountedPrice!: number;
 
   @ApiProperty({
     required: true,

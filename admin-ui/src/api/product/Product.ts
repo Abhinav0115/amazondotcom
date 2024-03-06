@@ -8,7 +8,7 @@ export type Product = {
   colors: JsonValue;
   createdAt: Date;
   description: JsonValue;
-  discountedPrice: number | null;
+  discountedPrice: number;
   id: string;
   images: JsonValue;
   order?: Order | null;
